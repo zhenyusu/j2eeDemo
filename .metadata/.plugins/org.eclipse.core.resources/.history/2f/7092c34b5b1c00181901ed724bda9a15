@@ -1,0 +1,8 @@
+package com.itheima.util;
+
+import java.util.HashMap;
+
+public class DBUtil {
+	Map<Stirng,Book> books = new HashMap<K, V>()
+
+}

@@ -1,0 +1,10 @@
+package com.itheima.entity;
+
+public class Book {
+	private String id;//Õº È±‡∫≈
+	private String name;
+	private String author;
+	private String price;
+	
+
+}

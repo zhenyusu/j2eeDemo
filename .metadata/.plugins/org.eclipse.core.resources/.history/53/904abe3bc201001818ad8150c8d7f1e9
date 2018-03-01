@@ -1,0 +1,27 @@
+package org.zhenyusu.io;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class FileWriterTest {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		write();
+	}
+	
+	private static void write() throws IOException{
+		String str = "我叫苏振宇-zhenyusu";
+		String path = "E:\\我的学习\\java web\\代码\\IOProject\\Files\\6.txt";
+		//创建流，指向目的文件
+		Writer writer = new FileWriter(path);
+		writer.write(str);
+		writer.close();
+	}
+
+}

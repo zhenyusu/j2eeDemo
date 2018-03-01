@@ -1,0 +1,79 @@
+package com.itheima.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.Enumeration;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ServletDemo3 extends HttpServlet {
+
+	/**
+	 * The doGet method of the servlet. <br>
+	 *
+	 * This method is called when a form has its tag value method equals to get.
+	 * 
+	 * @param request the request send by the client to the server
+	 * @param response the response send by the server to the client
+	 * @throws ServletException if an error occurred
+	 * @throws IOException if an error occurred
+	 */
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+//		test1(request);
+		//获取所有表单name
+		request.setCharacterEncoding("UTF-8");
+		Enumeration names = request.getParameterNames();
+		while(names.hasMoreElements()){
+			String name = (String)names.nextElement();//得到每一个name名
+			System.out.print(name);
+			String [] values = request.getParameterValues(name);//根据name得到value值
+			for(String value:values){
+				System.out.println(name+"\t"value);
+			}
+		}
+	
+	}
+
+	private void test1(HttpServletRequest request)
+			throws UnsupportedEncodingException {
+		//doGet(request, response);
+		//告诉服务器要使用什么编码，注：浏览器使用的是什么编码传过来的就是什么编码 
+		request.setCharacterEncoding("UTF-8");
+		//根据表单中name属性获取value属性的值
+		String userName = request.getParameter("userName");
+		String pwd = request.getParameter("pwd");
+		String sex = request.getParameter("sex");
+		String []hobbys = request.getParameterValues("hobby");
+		String city = request.getParameter("city");
+		System.out.println(userName);
+		System.out.println(pwd); 
+		System.out.println(sex);
+		for(int i = 0; hobbys != null && i < hobbys.length; i++){
+			System.out.println(hobbys[i]+"\t");
+		}
+		System.out.println();
+		System.out.println(city);
+	}
+
+	/**
+	 * The doPost method of the servlet. <br>
+	 *
+	 * This method is called when a form has its tag value method equals to post.
+	 * 
+	 * @param request the request send by the client to the server
+	 * @param response the response send by the server to the client
+	 * @throws ServletException if an error occurred
+	 * @throws IOException if an error occurred
+	 */
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	
+		doGet(request, response);
+}}
+	

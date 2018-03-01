@@ -1,0 +1,14 @@
+package com.itheima.util;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.itheima.entity.Book;
+
+public class DBUtil {
+	private static Map<String,Book> books = new HashMap<String, Book>();
+	static{
+		
+	}
+
+}

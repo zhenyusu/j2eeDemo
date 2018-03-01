@@ -1,0 +1,7 @@
+package gz.itcast.a_servlet;
+
+import javax.servlet.Servlet;
+
+public class ServletDemo1 implements Servlet{
+
+}

@@ -6150,3 +6150,107 @@ org.eclipse.core.internal.resources.ResourceException: The resource tree is lock
 
 !ENTRY org.eclipse.osgi 2 1 2018-03-01 16:20:47.298
 !MESSAGE NLS unused message: ContentFormat_description in: org.hibernate.eclipse.console.HibernateConsoleMessages
+
+!ENTRY com.genuitec.eclipse.ast.deploy.core 1 0 2018-03-01 19:06:14.296
+!MESSAGE Unable to set deployment errorMarker
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1747)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:654)
+	at com.genuitec.eclipse.ast.deploy.core.Deployment.addErrorMarker(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.ModuleDeployment.addErrorMarker(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.Deployment.setUptoDate(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.Deployment.undeploy(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.ModuleDeployment.undeploy(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.Deployment.undeploy(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.DeployedResourceEventProcessor.handlePreClose(Unknown Source)
+	at com.genuitec.eclipse.ast.deploy.core.DeployedResourceEventProcessor.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:249)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:307)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:165)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:129)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:162)
+	at org.eclipse.ui.actions.WorkspaceAction$2.runInWorkspace(WorkspaceAction.java:483)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 380 2018-03-01 19:06:14.296
+!MESSAGE The resource tree is locked for modifications.
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.432
+!MESSAGE NLS missing message: JavaMetaUtils_warning_default_package in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.432
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.433
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.433
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.433
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.433
+!MESSAGE NLS missing message: JavaVMUtility_launchconfig_default_server_type_id_attr in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.434
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_browse_jar_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.434
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.434
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.435
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_add_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.435
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_down_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.435
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_edit_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.435
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_remove_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.436
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_up_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.436
+!MESSAGE NLS missing message: MELibraryWizardPage_description in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.437
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_onlyone in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.437
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_zero in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.437
+!MESSAGE NLS missing message: MELibraryWizardPage_list_library_selector_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2018-03-01 19:06:32.438
+!MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-03-01 19:26:06.429
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for List [in List.class [in com.sun.xml.internal.bind.v2.schemagen.xmlschema [in D:\Users\阿苏\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:442)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:548)
+	at org.eclipse.jst.jsp.ui.internal.contentassist.JSPCompletionProposal.getAdditionalProposalInfo(JSPCompletionProposal.java:76)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-03-01 19:26:06.430
+!MESSAGE Unknown javadoc format for List [in List.class [in com.sun.xml.internal.bind.v2.schemagen.xmlschema [in D:\Users\阿苏\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar]]]

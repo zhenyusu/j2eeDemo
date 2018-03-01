@@ -29,3 +29,5 @@ Thu Mar 01 16:32:49 CST 2018   [info] Velocity successfully started.
 Thu Mar 01 16:32:49 CST 2018   [info] ResourceManager : found templates/xml/Xml.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
 Thu Mar 01 16:33:12 CST 2018   [info] ResourceManager : found templates/jsp/Jsp.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
 Thu Mar 01 16:33:12 CST 2018   [info] ResourceManager : found templates/jsp/JSPMetaTags.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Mar 01 19:06:33 CST 2018   [info] ResourceManager : found templates/web.xml.vm with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Mar 01 19:06:34 CST 2018   [info] ResourceManager : found /templates/velocity/welcome/Jsp.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
